@@ -6,7 +6,7 @@ pipeline1:
     feature:
       type: ORB
       module: ecto_opencv.features2d
-      n_features: 1000
+      n_features: 5000
       n_levels: 3
       scale_factor: 1.2
     descriptor:
@@ -15,8 +15,8 @@ pipeline1:
     search:
       key_size: 24
       multi_probe_level: 2
-      n_tables: 8
-      radius: 55
+      n_tables: 10
+      radius: 35
       ratio: 0.8
       type: 'LSH'
     db:
